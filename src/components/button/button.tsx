@@ -1,9 +1,9 @@
-import { type VariantProps, cva } from "class-variance-authority"
-import { twMerge } from "tailwind-merge"
+import { cva, type VariantProps } from "class-variance-authority"
 import clsx from "clsx"
+import { twMerge } from "tailwind-merge"
 
 const buttonVariants = cva(
-  "flex items-center gap-1 justify-center rounded-md font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 outline-none border-2 text-center bg-primary-1 ",
+  "flex items-center gap-1 justify-center rounded-md font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed outline-none border-2 text-center bg-primary-1 ",
   {
     variants: {
       variant: {

@@ -1,9 +1,8 @@
-import type { Metadata } from "next"
-import { Inter, Poppins } from "next/font/google"
-import "./globals.css"
 import { Header } from "@/components/header/header"
+import type { Metadata } from "next"
+import { Poppins } from "next/font/google"
+import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
 const poppins = Poppins({ subsets: ["latin"], weight: "400" })
 
 export const metadata: Metadata = {
