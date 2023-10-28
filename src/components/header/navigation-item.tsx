@@ -1,29 +1,33 @@
 "use client"
 
 import { NavigationProps } from "@/lib/types/navigation-item-type"
-import Link from "next/link"
-import React from "react"
+import { usePathname, useRouter } from "next/navigation"
 import { NavigationMark } from "./navigation-mark"
-import { usePathname } from "next/navigation"
 
 export const NavigationItem = ({
   content,
   href,
   className,
+  handleClickLink,
 }: NavigationProps) => {
+  const router = useRouter()
   const pathname = usePathname()
   const isActive = pathname === href
+
+  const handleGoToPage = () => {
+    router.push(href)
+    handleClickLink?.()
+  }
+
   return (
-    <div className="relative flex flex-col items-center justify-between  h-20">
-      <Link
-        href={href}
-        className={`${className} font-medium tracking-wide ${
-          isActive ? "text-primary-1" : "text-neutral-7"
-        } my-auto`}
-      >
-        {content}
-      </Link>
+    <button
+      onClick={handleGoToPage}
+      className={`h-20  relative flex flex-col items-center justify-center font-medium tracking-wide ${className} ${
+        isActive ? "text-primary-1" : "text-neutral-7"
+      } `}
+    >
+      {content}
       <NavigationMark isActive={isActive} />
-    </div>
+    </button>
   )
 }

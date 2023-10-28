@@ -8,13 +8,10 @@ import { NegativeFace } from "@/components/svg/negative"
 import { NeutralFace } from "@/components/svg/neutral"
 import { PositiveFace } from "@/components/svg/positive"
 import { TextArea } from "@/components/textarea"
-import { FaceType } from "@/lib/types/face-type"
 import { TweetSchema } from "@/lib/validations/tweet-validation"
 import { TweetData } from "@/lib/validations/types"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-
-const sentimentAPI: FaceType = "NEGATIVE"
 
 const TweetSentiment = () => {
   const {
@@ -33,7 +30,7 @@ const TweetSentiment = () => {
   }
 
   return (
-    <div className="flex flex-col-reverse lg:flex-row gap-4 items-start">
+    <div className="flex flex-col lg:flex-row gap-4 items-start animationToRight">
       <form className="flex-1 w-full" onSubmit={handleSubmit(handleSendTweet)}>
         <ControllerContainer
           control={control}
@@ -45,23 +42,23 @@ const TweetSentiment = () => {
         </Button>
       </form>
       <Sentiment.Root>
-        <Sentiment.Title title="Sentimento" />
+        <Sentiment.Title title="Sentimento do tweet" />
         <Sentiment.RootFaces>
           <Sentiment.RootFace className="flex flex-row gap-2 items-center">
             <Sentiment.FaceImage>
-              <PositiveFace type={sentimentAPI} />
+              <PositiveFace />
             </Sentiment.FaceImage>
             <Sentiment.FaceDescription title="Positivo" />
           </Sentiment.RootFace>
           <Sentiment.RootFace className="flex flex-row gap-2 items-center">
             <Sentiment.FaceImage>
-              <NegativeFace type={sentimentAPI} />
+              <NegativeFace />
             </Sentiment.FaceImage>
             <Sentiment.FaceDescription title="Negative" />
           </Sentiment.RootFace>
           <Sentiment.RootFace className="flex flex-row gap-2 items-center">
             <Sentiment.FaceImage>
-              <NeutralFace type={sentimentAPI} />
+              <NeutralFace />
             </Sentiment.FaceImage>
             <Sentiment.FaceDescription title="Neutro" />
           </Sentiment.RootFace>
