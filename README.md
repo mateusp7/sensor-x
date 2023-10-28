@@ -1,51 +1,51 @@
-Projeto de Análise de Sentimentos
-Este projeto faz parte do currículo da disciplina "Projeto Integrador IV". Nosso principal objetivo é desenvolver um sistema capaz de determinar o sentimento de um tweet específico.
+<h1>Projeto de Análise de Sentimentos</h1>
 
-Tabela de Conteúdo
-Introdução
-Escopo
-Design
-Frontend
-Tecnologias
-Introdução
-No âmbito das redes sociais, entender o sentimento por trás de um tweet é crucial. A análise de sentimento, também conhecida como mineração de opinião, é o processo de determinar o sentimento ou tom emocional em um pedaço de texto. Isso ajuda a compreender a opinião pública, feedback e reações a um tópico específico.
+<p>Este projeto faz parte do currículo da disciplina "Projeto Integrador IV". Nosso principal objetivo é desenvolver um sistema capaz de determinar o sentimento de um tweet específico.</p>
 
-Nosso projeto é dedicado a construir um sistema de análise de sentimento que pode analisar tweets e determinar seu tom emocional - se eles são positivos, negativos ou neutros.
+<h2>Tabela de Conteúdo</h2>
+<ul>
+  <li>Introdução</li>
+  <li>Escopo</li>
+  <li>Design</li>
+  <li>Tecnologias</li>
+</ul>
 
-Escopo
-O escopo do nosso projeto abrange uma série de tarefas:
+<h2>Introdução</h2>
 
-Extração e Pré-processamento de Dados: Coletamos tweets de várias fontes e pré-processamos os dados de texto, preparando-o para a análise de sentimento.
+<p>No âmbito das redes sociais, entender o sentimento por trás de um tweet é crucial. A análise de sentimento, também conhecida como mineração de opinião, é o processo de determinar o sentimento ou tom emocional em um pedaço de texto. Isso ajuda a compreender a opinião pública, feedback e reações a um tópico específico.</p>
 
-Modelo de Aprendizado de Máquina: Desenvolvemos um modelo de aprendizado de máquina capaz de prever o sentimento de um texto fornecido. Este modelo é treinado em um conjunto de dados rotulado contendo tweets com sentimentos conhecidos.
+<p>Nosso projeto é dedicado a construir um sistema de análise de sentimento que pode analisar tweets e determinar seu tom emocional - se eles são positivos, negativos ou neutros.</p>
 
-API Personalizada: Ao lado do modelo de aprendizado de máquina, criamos uma API que serve como a interface para nosso sistema. Os usuários podem enviar um tweet para esta API, que retorna a previsão de sentimento.
+<h2>Escopo</h2>
 
-Aplicação Frontend: A aplicação frontend permite que os usuários interajam com nosso sistema. Os usuários podem inserir um tweet, e o sistema fornece a previsão de sentimento em uma interface amigável.
+<p>O escopo do nosso projeto abrange uma série de tarefas:</p>
 
-Design de Interface do Usuário: A interface do usuário foi projetada usando o Figma, uma ferramenta de design de interface colaborativa. Você pode ver nosso design em Figma.
+<ol>
+  <li><strong>Extração e Pré-processamento de Dados:</strong> Coletamos tweets de várias fontes e pré-processamos os dados de texto, preparando-o para a análise de sentimento.</li>
+  <li><strong>Modelo de Aprendizado de Máquina:</strong> Desenvolvemos um modelo de aprendizado de máquina capaz de prever o sentimento de um texto fornecido. Este modelo é treinado em um conjunto de dados rotulado contendo tweets com sentimentos conhecidos.</li>
+  <li><strong>API Personalizada:</strong> Ao lado do modelo de aprendizado de máquina, criamos uma API que serve como a interface para nosso sistema. Os usuários podem enviar um tweet para esta API, que retorna a previsão de sentimento.</li>
+  <li><strong>Aplicação Frontend:</strong> A aplicação frontend permite que os usuários interajam com nosso sistema. Os usuários podem inserir um tweet, e o sistema fornece a previsão de sentimento em uma interface amigável.</li>
+  <li><strong>Design de Interface do Usuário:</strong> A interface do usuário foi projetada usando o Figma, uma ferramenta de design de interface colaborativa. Você pode ver nosso design em Figma.</li>
+</ol>
 
-Design
-O design do nosso sistema foi planejado meticulosamente usando o Figma. Isso nos permite visualizar a interface do usuário, interações e o fluxo da aplicação. O Figma oferece um ambiente de design colaborativo, tornando-o uma excelente escolha para o design de UI/UX em projetos de software.
+<h2>Design</h2>
 
-Frontend
-Para o frontend do nosso projeto, optamos por um conjunto de tecnologias modernas e de alto desempenho:
+<p>O design do nosso sistema foi planejado meticulosamente usando o Figma. Isso nos permite visualizar a interface do usuário, interações e o fluxo da aplicação. O Figma oferece um ambiente de design colaborativo, tornando-o uma excelente escolha para o design de UI/UX em projetos de software.</p>
 
-Next.js: Um framework React que permite a renderização no lado do servidor, tornando nossa aplicação rápida e amigável para mecanismos de busca.
+<h2>Frontend</h2>
+<p>Para o frontend do nosso projeto, optamos por um conjunto de tecnologias modernas e de alto desempenho:</p>
 
-TypeScript: Um superconjunto de JavaScript com tipos estáticos, que melhora a qualidade do código e a produtividade do desenvolvedor.
+<ul>
+  <li>Next.js</li>
+  <li>TypeScript</li>
+  <li>Tailwind CSS</li>
+  <li>Chart JS</li>
+  <li>React-hook-form</li>
+  <li>Zod</li>
+  <li>Axios</li>
+</ul>
 
-Tailwind CSS: Um framework de CSS baseado em utilitários para design de aplicativos da web. Ele permite o desenvolvimento rápido de interfaces e estilos personalizados.
+<h2>Tecnologias</h2>
+<p>Nosso projeto é uma mistura de tecnologias e metodologias modernas, combinando ciência de dados, desenvolvimento web e design de UI/UX. Essa abordagem nos permite construir um sistema abrangente para análise de sentimento. Integrando modelos de aprendizado de máquina personalizados, APIs e interfaces bem projetadas, estamos pavimentando o caminho para uma análise eficiente de sentimentos em tweets.</p>
 
-Chart.js: Uma biblioteca JavaScript para criar gráficos interativos e personalizáveis. Usamos para visualizar dados e resultados de análise de sentimento.
-
-react-hook-form: Uma biblioteca para gerenciar o estado e a validação de formulários. Utilizamos para criar e gerenciar formulários de entrada do usuário.
-
-Zod: Uma biblioteca de validação de esquema voltada para TypeScript. Ela auxilia na validação e processamento de entrada do usuário.
-
-Axios: Um cliente HTTP popular para fazer solicitações assíncronas à API personalizada que criamos.
-
-Tecnologias
-Nosso projeto é uma mistura de tecnologias e metodologias modernas, combinando ciência de dados, desenvolvimento web e design de UI/UX. Essa abordagem nos permite construir um sistema abrangente para análise de sentimento. Integrando modelos de aprendizado de máquina personalizados, APIs e interfaces bem projetadas, estamos pavimentando o caminho para uma análise eficiente de sentimentos em tweets.
-
-Em resumo, este projeto demonstra a convergência da tecnologia na resolução de problemas do mundo real e destaca as habilidades colaborativas e interdisciplinares da nossa equipe. É um testemunho do poder das ferramentas e metodologias de desenvolvimento modernas na resolução de desafios complexos.
+<p>Em resumo, este projeto demonstra a convergência da tecnologia na resolução de problemas do mundo real e destaca as habilidades colaborativas e interdisciplinares da nossa equipe. É um testemunho do poder das ferramentas e metodologias de desenvolvimento modernas na resolução de desafios complexos.</p>
