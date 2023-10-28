@@ -20,12 +20,16 @@ const TweetSentiment = () => {
     control,
     handleSubmit,
     formState: { errors },
+    watch,
   } = useForm<TweetData>({
     resolver: zodResolver(TweetSchema),
     defaultValues: {
       tweet: "",
     },
   })
+
+  const tweet = watch("tweet")
+  const isDisabled = tweet.length === 0
 
   const handleSendTweet = (values: TweetData) => {
     console.log("values", values)
@@ -49,8 +53,14 @@ const TweetSentiment = () => {
             name="tweet"
             render={({ field }) => <TextArea {...field} error={errors.tweet} />}
           />
-          <Button aria-label="Enviar tweet" className="mt-4" type="submit">
-            Enviar Tweet <Icons.chevronRight className="h-6 w-6 text-white" />
+          <Button
+            disabled={isDisabled}
+            aria-label="Enviar tweet"
+            className="mt-4"
+            type="submit"
+          >
+            Descobrir sentimento{" "}
+            <Icons.scanFace className="h-6 w-6 text-white" />
           </Button>
         </form>
         <Sentiment.Root>
