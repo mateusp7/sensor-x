@@ -76,7 +76,7 @@ const TweetSentiment = () => {
               <Sentiment.FaceImage>
                 <NegativeFace />
               </Sentiment.FaceImage>
-              <Sentiment.FaceDescription title="Negative" />
+              <Sentiment.FaceDescription title="Negativo" />
             </Sentiment.RootFace>
             <Sentiment.RootFace className="flex flex-row gap-2 items-center">
               <Sentiment.FaceImage>
