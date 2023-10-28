@@ -7,5 +7,5 @@ export const SentimentRootFaces = ({
   children: ReactNode
   className?: string
 }) => {
-  return <ul className={`flex gap-4 ${className}`}>{children}</ul>
+  return <ul className={`flex flex-wrap gap-4 ${className}`}>{children}</ul>
 }
