@@ -36,8 +36,9 @@ const TweetSentiment = () => {
       <Explanation.Root>
         <Explanation.Description description="Identificação" />
         <Explanation.Title title="Tweet" />
-        <Divider />
+        <Explanation.Subtitle subTitle="Atualizado em: 16/09/2023" />
       </Explanation.Root>
+      <Divider />
       <div className="flex flex-col lg:flex-row gap-4 items-start animationToRight">
         <form
           className="flex-1 w-full"
